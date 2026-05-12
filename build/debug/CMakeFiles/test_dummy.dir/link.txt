@@ -1,0 +1,1 @@
+/usr/bin/cc -g -O0 CMakeFiles/test_dummy.dir/tests/test_dummy.c.o -o test_dummy  libs/exoc99/libgame.a libs/exoc99/libboard.a libs/exoc99/libbitutils.a 

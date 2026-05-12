@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/include -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/enigma.dir/src/enigma.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/src/enigma.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/src/enigma.c",
+  "output": "CMakeFiles/enigma.dir/src/enigma.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/include -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/enigmaexo_main.dir/app/main.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/app/main.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/app/main.c",
+  "output": "CMakeFiles/enigmaexo_main.dir/app/main.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/include -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/test_dummy.dir/tests/test_dummy.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c",
+  "output": "CMakeFiles/test_dummy.dir/tests/test_dummy.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/include -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/test_enigma.dir/tests/test_enigma.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c",
+  "output": "CMakeFiles/test_enigma.dir/tests/test_enigma.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/bitutils.dir/src/bitutils.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/src/bitutils.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/src/bitutils.c",
+  "output": "libs/exoc99/CMakeFiles/bitutils.dir/src/bitutils.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/board.dir/src/board.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/src/board.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/src/board.c",
+  "output": "libs/exoc99/CMakeFiles/board.dir/src/board.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/game.dir/src/game.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/src/game.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/src/game.c",
+  "output": "libs/exoc99/CMakeFiles/game.dir/src/game.c.o"
+},
+{
+  "directory": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99",
+  "command": "/usr/bin/cc  -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include -g -O0 -std=gnu99 -o CMakeFiles/exoc99_main.dir/app/main.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/app/main.c",
+  "file": "/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/app/main.c",
+  "output": "libs/exoc99/CMakeFiles/exoc99_main.dir/app/main.c.o"
+}
+]

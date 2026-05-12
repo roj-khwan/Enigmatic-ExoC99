@@ -1,0 +1,3 @@
+[submodule "libs/exoc99"]
+	path = libs/exoc99
+	url = https://github.com/roj-khwan/ExO-C99.git

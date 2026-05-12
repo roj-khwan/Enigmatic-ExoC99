@@ -1,0 +1,36 @@
+Start testing: May 12 18:14 +07
+----------------------------------------------------------
+1/2 Testing: dummy-tests
+1/2 Test: dummy-tests
+Command: "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/tests_dummy"
+Directory: /home/london-femboy/Projects/CFool/Enigmatic-ExO/build
+"dummy-tests" start time: May 12 18:14 +07
+Output:
+----------------------------------------------------------
+SIX SEVEN!!!!
+All tests passed!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"dummy-tests" end time: May 12 18:14 +07
+"dummy-tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/tests_enigma_logic
+2/2 Testing: enigma-tests
+2/2 Test: enigma-tests
+Command: ""
+Directory: /home/london-femboy/Projects/CFool/Enigmatic-ExO/build
+"enigma-tests" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"enigma-tests" end time: May 12 18:14 +07
+"enigma-tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 12 18:14 +07

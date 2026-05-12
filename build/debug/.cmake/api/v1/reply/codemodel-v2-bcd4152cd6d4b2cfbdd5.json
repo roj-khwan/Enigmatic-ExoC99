@@ -1,0 +1,156 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						6,
+						7
+					]
+				},
+				{
+					"build" : "libs/exoc99",
+					"jsonFile" : "directory-libs.exoc99-Debug-f8344939ac8b2f575824.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libs/exoc99",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Enigmatic-ExO",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						6,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "ExO_C99",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "bitutils::@5b0ce0401d97879fe4c6",
+					"jsonFile" : "target-bitutils-Debug-9759b401bd5edd126753.json",
+					"name" : "bitutils",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "board::@5b0ce0401d97879fe4c6",
+					"jsonFile" : "target-board-Debug-8e8eda5579a4fd5930a7.json",
+					"name" : "board",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "enigma::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-enigma-Debug-12c584ecb7b6dac353e0.json",
+					"name" : "enigma",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "enigmaexo_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-enigmaexo_main-Debug-66daa76c199fc879eb8f.json",
+					"name" : "enigmaexo_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "exoc99_main::@5b0ce0401d97879fe4c6",
+					"jsonFile" : "target-exoc99_main-Debug-894c8fda8adc82786237.json",
+					"name" : "exoc99_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "game::@5b0ce0401d97879fe4c6",
+					"jsonFile" : "target-game-Debug-f26cb36fb81064542b77.json",
+					"name" : "game",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_dummy::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_dummy-Debug-d408bea466c9b5ec6387.json",
+					"name" : "test_dummy",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_enigma::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_enigma-Debug-d5792f93bea446774c7d.json",
+					"name" : "test_enigma",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug",
+		"source" : "/home/london-femboy/Projects/CFool/Enigmatic-ExO"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

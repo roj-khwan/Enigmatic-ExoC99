@@ -1,0 +1,1 @@
+/usr/bin/cc -g -O0 CMakeFiles/tests_enigma_logic.dir/tests/test_enigma.c.o -o tests_enigma_logic  libenigma.a libs/exoc99/libgame.a libs/exoc99/libboard.a libs/exoc99/libbitutils.a 

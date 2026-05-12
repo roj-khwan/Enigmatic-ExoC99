@@ -1,0 +1,14 @@
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/enigma.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/enigmaexo_main.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test_dummy.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test_enigma.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/edit_cache.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/rebuild_cache.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/bitutils.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/board.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/game.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/exoc99_main.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/test.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/edit_cache.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/libs/exoc99/CMakeFiles/rebuild_cache.dir

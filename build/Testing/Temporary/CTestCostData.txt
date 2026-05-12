@@ -1,0 +1,5 @@
+enigma_tests 2 0.00058995
+dummy-tests 2 0.00145366
+enigma-tests 0 0
+---
+enigma-tests

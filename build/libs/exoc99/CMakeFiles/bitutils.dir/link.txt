@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbitutils.a CMakeFiles/bitutils.dir/src/bitutils.c.o
+/usr/bin/ranlib libbitutils.a

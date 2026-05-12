@@ -1,0 +1,2 @@
+/usr/bin/ar qc libenigma.a CMakeFiles/enigma.dir/src/enigma.c.o
+/usr/bin/ranlib libenigma.a
