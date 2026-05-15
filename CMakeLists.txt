@@ -2,65 +2,73 @@ cmake_minimum_required(VERSION 3.23)
 set(CMAKE_C_STANDARD 99)
 
 # Ensure debug symbols
-set(CMAKE_C_FLAGS_DEBUG "-g -O0")
+set(CMAKE_C_FLAGS_DEBUG "-g -O0 -Wall -Wextra")
 project(Enigmatic-ExO C)
+
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Debug)
+endif()
 
 add_subdirectory(libs/exoc99)
 
-add_library(
-  enigma
-  STATIC
-  src/enigma.c
-)
-target_link_libraries(
-  enigma
-  PUBLIC
-  game
-)
-target_include_directories(
-  enigma
-  PUBLIC include
-)
+function(add_project_library libname)
+  add_library(
+    ${libname}
+    STATIC src/${libname}.c
+  )
+  target_link_libraries(
+    ${libname} 
+    PUBLIC ${ARGN}
+  )
+  target_include_directories(
+    ${libname}
+    PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
+  )
+endfunction()
+
+add_project_library(minimax game board)
+add_project_library(enigma game board minimax)
+
 add_executable(
   enigmaexo_main
   app/main.c
 )
 target_link_libraries(
   enigmaexo_main
-  enigma
+  PRIVATE enigma
+)
+add_executable(
+  enigmaexo_mainprune
+  app/mainprune.c
+)
+target_link_libraries(
+  enigmaexo_mainprune
+  PRIVATE enigma
 )
 
 # ---tests---
 enable_testing()
 
-file(GLOB TESTS tests/*.c)
+function(add_game_test testname)
+  add_executable(${testname} tests/${testname}.c)
 
-# add_library(test_common INTERFACE)
-# target_include_directories(test_common INTERFACE
-#   ${CMAKE_SOURCE_DIR}/tests/framework
-# )
+  target_include_directories(
+    ${testname}
+    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+  )
 
-foreach(testfile ${TESTS})
-    get_filename_component(testname ${testfile} NAME_WE)
+  target_link_libraries(
+    ${testname}
+    PRIVATE
+    ${ARGN}
+  )
 
-    add_executable(${testname} ${testfile})
-    # target_link_libraries(${testname} PRIVATE test_common)
-    target_include_directories(
-      ${testname}
-      PRIVATE include
-    )
-    target_link_libraries(
-      ${testname}
-      PRIVATE
-      game board
-    )
-    add_test(
-      NAME ${testname}
-      COMMAND ${testname}
-    )
-endforeach()
+  add_test(
+    NAME ${testname}
+    COMMAND ${testname}
+  )
+endfunction()
 
-target_link_libraries(
-  test_enigma
-  PRIVATE enigma
-)
+add_game_test(test_dummy)
+add_game_test(test_enigma game board enigma)
+add_game_test(test_minimax board game enigma minimax)

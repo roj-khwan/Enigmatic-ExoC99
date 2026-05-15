@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c" "CMakeFiles/test_enigma.dir/tests/test_dummy.c.o" "gcc" "CMakeFiles/test_enigma.dir/tests/test_dummy.c.o.d"
-  "/home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_framework.c" "CMakeFiles/test_enigma.dir/tests/test_framework.c.o" "gcc" "CMakeFiles/test_enigma.dir/tests/test_framework.c.o.d"
-  "/home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_runner.c" "CMakeFiles/test_enigma.dir/tests/test_runner.c.o" "gcc" "CMakeFiles/test_enigma.dir/tests/test_runner.c.o.d"
+  "/home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c" "CMakeFiles/test_enigma.dir/tests/test_enigma.c.o" "gcc" "CMakeFiles/test_enigma.dir/tests/test_enigma.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

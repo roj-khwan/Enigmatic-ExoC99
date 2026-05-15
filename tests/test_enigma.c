@@ -61,8 +61,8 @@ int test_evaluation() {
 }
 
 int main() {
+    TEST_SUITE("Enigma!!!");
     test_find_availables();
     test_evaluation();
-    printf("All tests passed!\n");
     return 0;
 }

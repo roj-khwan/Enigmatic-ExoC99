@@ -8,7 +8,7 @@ int test_dummy() {
 }
 
 int main() {
+    TEST_SUITE("DUmmy!!!");
     test_dummy();
-    printf("All tests passed!\n");
     return 0;
 }

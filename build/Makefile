@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named minimax
+
+# Build rule for target.
+minimax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minimax
+.PHONY : minimax
+
+# fast build rule for target.
+minimax/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/build
+.PHONY : minimax/fast
+
+#=============================================================================
 # Target rules for targets named enigma
 
 # Build rule for target.
@@ -153,30 +166,43 @@ enigmaexo_main/fast:
 .PHONY : enigmaexo_main/fast
 
 #=============================================================================
-# Target rules for targets named tests_dummy
+# Target rules for targets named test_dummy
 
 # Build rule for target.
-tests_dummy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests_dummy
-.PHONY : tests_dummy
+test_dummy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_dummy
+.PHONY : test_dummy
 
 # fast build rule for target.
-tests_dummy/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/build
-.PHONY : tests_dummy/fast
+test_dummy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/build
+.PHONY : test_dummy/fast
 
 #=============================================================================
-# Target rules for targets named tests_enigma_logic
+# Target rules for targets named test_enigma
 
 # Build rule for target.
-tests_enigma_logic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests_enigma_logic
-.PHONY : tests_enigma_logic
+test_enigma: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_enigma
+.PHONY : test_enigma
 
 # fast build rule for target.
-tests_enigma_logic/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/build
-.PHONY : tests_enigma_logic/fast
+test_enigma/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/build
+.PHONY : test_enigma/fast
+
+#=============================================================================
+# Target rules for targets named test_minimax
+
+# Build rule for target.
+test_minimax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_minimax
+.PHONY : test_minimax
+
+# fast build rule for target.
+test_minimax/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/build
+.PHONY : test_minimax/fast
 
 #=============================================================================
 # Target rules for targets named bitutils
@@ -278,12 +304,36 @@ src/enigma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigma.dir/build.make CMakeFiles/enigma.dir/src/enigma.c.s
 .PHONY : src/enigma.c.s
 
+src/minimax.o: src/minimax.c.o
+.PHONY : src/minimax.o
+
+# target to build an object file
+src/minimax.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/src/minimax.c.o
+.PHONY : src/minimax.c.o
+
+src/minimax.i: src/minimax.c.i
+.PHONY : src/minimax.i
+
+# target to preprocess a source file
+src/minimax.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/src/minimax.c.i
+.PHONY : src/minimax.c.i
+
+src/minimax.s: src/minimax.c.s
+.PHONY : src/minimax.s
+
+# target to generate assembly for a file
+src/minimax.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/src/minimax.c.s
+.PHONY : src/minimax.c.s
+
 tests/test_dummy.o: tests/test_dummy.c.o
 .PHONY : tests/test_dummy.o
 
 # target to build an object file
 tests/test_dummy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/tests/test_dummy.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/tests/test_dummy.c.o
 .PHONY : tests/test_dummy.c.o
 
 tests/test_dummy.i: tests/test_dummy.c.i
@@ -291,7 +341,7 @@ tests/test_dummy.i: tests/test_dummy.c.i
 
 # target to preprocess a source file
 tests/test_dummy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/tests/test_dummy.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/tests/test_dummy.c.i
 .PHONY : tests/test_dummy.c.i
 
 tests/test_dummy.s: tests/test_dummy.c.s
@@ -299,7 +349,7 @@ tests/test_dummy.s: tests/test_dummy.c.s
 
 # target to generate assembly for a file
 tests/test_dummy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/tests/test_dummy.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/tests/test_dummy.c.s
 .PHONY : tests/test_dummy.c.s
 
 tests/test_enigma.o: tests/test_enigma.c.o
@@ -307,7 +357,7 @@ tests/test_enigma.o: tests/test_enigma.c.o
 
 # target to build an object file
 tests/test_enigma.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/tests/test_enigma.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/tests/test_enigma.c.o
 .PHONY : tests/test_enigma.c.o
 
 tests/test_enigma.i: tests/test_enigma.c.i
@@ -315,7 +365,7 @@ tests/test_enigma.i: tests/test_enigma.c.i
 
 # target to preprocess a source file
 tests/test_enigma.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/tests/test_enigma.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/tests/test_enigma.c.i
 .PHONY : tests/test_enigma.c.i
 
 tests/test_enigma.s: tests/test_enigma.c.s
@@ -323,8 +373,32 @@ tests/test_enigma.s: tests/test_enigma.c.s
 
 # target to generate assembly for a file
 tests/test_enigma.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/tests/test_enigma.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/tests/test_enigma.c.s
 .PHONY : tests/test_enigma.c.s
+
+tests/test_minimax.o: tests/test_minimax.c.o
+.PHONY : tests/test_minimax.o
+
+# target to build an object file
+tests/test_minimax.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/tests/test_minimax.c.o
+.PHONY : tests/test_minimax.c.o
+
+tests/test_minimax.i: tests/test_minimax.c.i
+.PHONY : tests/test_minimax.i
+
+# target to preprocess a source file
+tests/test_minimax.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/tests/test_minimax.c.i
+.PHONY : tests/test_minimax.c.i
+
+tests/test_minimax.s: tests/test_minimax.c.s
+.PHONY : tests/test_minimax.s
+
+# target to generate assembly for a file
+tests/test_minimax.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/tests/test_minimax.c.s
+.PHONY : tests/test_minimax.c.s
 
 # Help Target
 help:
@@ -341,20 +415,28 @@ help:
 	@echo "... enigmaexo_main"
 	@echo "... exoc99_main"
 	@echo "... game"
-	@echo "... tests_dummy"
-	@echo "... tests_enigma_logic"
+	@echo "... minimax"
+	@echo "... test_dummy"
+	@echo "... test_enigma"
+	@echo "... test_minimax"
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
 	@echo "... src/enigma.o"
 	@echo "... src/enigma.i"
 	@echo "... src/enigma.s"
+	@echo "... src/minimax.o"
+	@echo "... src/minimax.i"
+	@echo "... src/minimax.s"
 	@echo "... tests/test_dummy.o"
 	@echo "... tests/test_dummy.i"
 	@echo "... tests/test_dummy.s"
 	@echo "... tests/test_enigma.o"
 	@echo "... tests/test_enigma.i"
 	@echo "... tests/test_enigma.s"
+	@echo "... tests/test_minimax.o"
+	@echo "... tests/test_minimax.i"
+	@echo "... tests/test_minimax.s"
 .PHONY : help
 
 

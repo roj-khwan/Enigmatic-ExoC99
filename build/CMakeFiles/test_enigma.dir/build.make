@@ -69,67 +69,38 @@ include CMakeFiles/test_enigma.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test_enigma.dir/flags.make
 
-CMakeFiles/test_enigma.dir/tests/test_runner.c.o: CMakeFiles/test_enigma.dir/flags.make
-CMakeFiles/test_enigma.dir/tests/test_runner.c.o: /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_runner.c
-CMakeFiles/test_enigma.dir/tests/test_runner.c.o: CMakeFiles/test_enigma.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_enigma.dir/tests/test_runner.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_enigma.dir/tests/test_runner.c.o -MF CMakeFiles/test_enigma.dir/tests/test_runner.c.o.d -o CMakeFiles/test_enigma.dir/tests/test_runner.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_runner.c
+CMakeFiles/test_enigma.dir/tests/test_enigma.c.o: CMakeFiles/test_enigma.dir/flags.make
+CMakeFiles/test_enigma.dir/tests/test_enigma.c.o: /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c
+CMakeFiles/test_enigma.dir/tests/test_enigma.c.o: CMakeFiles/test_enigma.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_enigma.dir/tests/test_enigma.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_enigma.dir/tests/test_enigma.c.o -MF CMakeFiles/test_enigma.dir/tests/test_enigma.c.o.d -o CMakeFiles/test_enigma.dir/tests/test_enigma.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c
 
-CMakeFiles/test_enigma.dir/tests/test_runner.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_enigma.dir/tests/test_runner.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_runner.c > CMakeFiles/test_enigma.dir/tests/test_runner.c.i
+CMakeFiles/test_enigma.dir/tests/test_enigma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_enigma.dir/tests/test_enigma.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c > CMakeFiles/test_enigma.dir/tests/test_enigma.c.i
 
-CMakeFiles/test_enigma.dir/tests/test_runner.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_enigma.dir/tests/test_runner.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_runner.c -o CMakeFiles/test_enigma.dir/tests/test_runner.c.s
-
-CMakeFiles/test_enigma.dir/tests/test_dummy.c.o: CMakeFiles/test_enigma.dir/flags.make
-CMakeFiles/test_enigma.dir/tests/test_dummy.c.o: /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c
-CMakeFiles/test_enigma.dir/tests/test_dummy.c.o: CMakeFiles/test_enigma.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_enigma.dir/tests/test_dummy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_enigma.dir/tests/test_dummy.c.o -MF CMakeFiles/test_enigma.dir/tests/test_dummy.c.o.d -o CMakeFiles/test_enigma.dir/tests/test_dummy.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c
-
-CMakeFiles/test_enigma.dir/tests/test_dummy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_enigma.dir/tests/test_dummy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c > CMakeFiles/test_enigma.dir/tests/test_dummy.c.i
-
-CMakeFiles/test_enigma.dir/tests/test_dummy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_enigma.dir/tests/test_dummy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_dummy.c -o CMakeFiles/test_enigma.dir/tests/test_dummy.c.s
-
-CMakeFiles/test_enigma.dir/tests/test_framework.c.o: CMakeFiles/test_enigma.dir/flags.make
-CMakeFiles/test_enigma.dir/tests/test_framework.c.o: /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_framework.c
-CMakeFiles/test_enigma.dir/tests/test_framework.c.o: CMakeFiles/test_enigma.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_enigma.dir/tests/test_framework.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_enigma.dir/tests/test_framework.c.o -MF CMakeFiles/test_enigma.dir/tests/test_framework.c.o.d -o CMakeFiles/test_enigma.dir/tests/test_framework.c.o -c /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_framework.c
-
-CMakeFiles/test_enigma.dir/tests/test_framework.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_enigma.dir/tests/test_framework.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_framework.c > CMakeFiles/test_enigma.dir/tests/test_framework.c.i
-
-CMakeFiles/test_enigma.dir/tests/test_framework.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_enigma.dir/tests/test_framework.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_framework.c -o CMakeFiles/test_enigma.dir/tests/test_framework.c.s
+CMakeFiles/test_enigma.dir/tests/test_enigma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_enigma.dir/tests/test_enigma.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/london-femboy/Projects/CFool/Enigmatic-ExO/tests/test_enigma.c -o CMakeFiles/test_enigma.dir/tests/test_enigma.c.s
 
 # Object files for target test_enigma
 test_enigma_OBJECTS = \
-"CMakeFiles/test_enigma.dir/tests/test_runner.c.o" \
-"CMakeFiles/test_enigma.dir/tests/test_dummy.c.o" \
-"CMakeFiles/test_enigma.dir/tests/test_framework.c.o"
+"CMakeFiles/test_enigma.dir/tests/test_enigma.c.o"
 
 # External object files for target test_enigma
 test_enigma_EXTERNAL_OBJECTS =
 
-test_enigma: CMakeFiles/test_enigma.dir/tests/test_runner.c.o
-test_enigma: CMakeFiles/test_enigma.dir/tests/test_dummy.c.o
-test_enigma: CMakeFiles/test_enigma.dir/tests/test_framework.c.o
+test_enigma: CMakeFiles/test_enigma.dir/tests/test_enigma.c.o
 test_enigma: CMakeFiles/test_enigma.dir/build.make
+test_enigma: libs/exoc99/libgame.a
+test_enigma: libs/exoc99/libboard.a
 test_enigma: libenigma.a
+test_enigma: libminimax.a
 test_enigma: libs/exoc99/libgame.a
 test_enigma: libs/exoc99/libboard.a
 test_enigma: libs/exoc99/libbitutils.a
 test_enigma: CMakeFiles/test_enigma.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable test_enigma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_enigma"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_enigma.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

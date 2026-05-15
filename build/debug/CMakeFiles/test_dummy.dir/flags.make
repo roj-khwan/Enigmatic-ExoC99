@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/include -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include
+C_INCLUDES = -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/include
 
-C_FLAGS = -g -O0 -std=gnu99
+C_FLAGS = -g -O0 -Wall -Wextra -std=gnu99
 

@@ -127,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named minimax
+
+# Build rule for target.
+minimax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 minimax
+.PHONY : minimax
+
+# fast build rule for target.
+minimax/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/build
+.PHONY : minimax/fast
+
+#=============================================================================
 # Target rules for targets named enigma
 
 # Build rule for target.
@@ -153,6 +166,19 @@ enigmaexo_main/fast:
 .PHONY : enigmaexo_main/fast
 
 #=============================================================================
+# Target rules for targets named enigmaexo_mainprune
+
+# Build rule for target.
+enigmaexo_mainprune: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 enigmaexo_mainprune
+.PHONY : enigmaexo_mainprune
+
+# fast build rule for target.
+enigmaexo_mainprune/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_mainprune.dir/build.make CMakeFiles/enigmaexo_mainprune.dir/build
+.PHONY : enigmaexo_mainprune/fast
+
+#=============================================================================
 # Target rules for targets named test_dummy
 
 # Build rule for target.
@@ -177,6 +203,19 @@ test_enigma: cmake_check_build_system
 test_enigma/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/build
 .PHONY : test_enigma/fast
+
+#=============================================================================
+# Target rules for targets named test_minimax
+
+# Build rule for target.
+test_minimax: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_minimax
+.PHONY : test_minimax
+
+# fast build rule for target.
+test_minimax/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/build
+.PHONY : test_minimax/fast
 
 #=============================================================================
 # Target rules for targets named bitutils
@@ -254,6 +293,30 @@ app/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_main.dir/build.make CMakeFiles/enigmaexo_main.dir/app/main.c.s
 .PHONY : app/main.c.s
 
+app/mainprune.o: app/mainprune.c.o
+.PHONY : app/mainprune.o
+
+# target to build an object file
+app/mainprune.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_mainprune.dir/build.make CMakeFiles/enigmaexo_mainprune.dir/app/mainprune.c.o
+.PHONY : app/mainprune.c.o
+
+app/mainprune.i: app/mainprune.c.i
+.PHONY : app/mainprune.i
+
+# target to preprocess a source file
+app/mainprune.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_mainprune.dir/build.make CMakeFiles/enigmaexo_mainprune.dir/app/mainprune.c.i
+.PHONY : app/mainprune.c.i
+
+app/mainprune.s: app/mainprune.c.s
+.PHONY : app/mainprune.s
+
+# target to generate assembly for a file
+app/mainprune.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_mainprune.dir/build.make CMakeFiles/enigmaexo_mainprune.dir/app/mainprune.c.s
+.PHONY : app/mainprune.c.s
+
 src/enigma.o: src/enigma.c.o
 .PHONY : src/enigma.o
 
@@ -277,6 +340,30 @@ src/enigma.s: src/enigma.c.s
 src/enigma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigma.dir/build.make CMakeFiles/enigma.dir/src/enigma.c.s
 .PHONY : src/enigma.c.s
+
+src/minimax.o: src/minimax.c.o
+.PHONY : src/minimax.o
+
+# target to build an object file
+src/minimax.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/src/minimax.c.o
+.PHONY : src/minimax.c.o
+
+src/minimax.i: src/minimax.c.i
+.PHONY : src/minimax.i
+
+# target to preprocess a source file
+src/minimax.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/src/minimax.c.i
+.PHONY : src/minimax.c.i
+
+src/minimax.s: src/minimax.c.s
+.PHONY : src/minimax.s
+
+# target to generate assembly for a file
+src/minimax.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/src/minimax.c.s
+.PHONY : src/minimax.c.s
 
 tests/test_dummy.o: tests/test_dummy.c.o
 .PHONY : tests/test_dummy.o
@@ -326,6 +413,30 @@ tests/test_enigma.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/tests/test_enigma.c.s
 .PHONY : tests/test_enigma.c.s
 
+tests/test_minimax.o: tests/test_minimax.c.o
+.PHONY : tests/test_minimax.o
+
+# target to build an object file
+tests/test_minimax.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/tests/test_minimax.c.o
+.PHONY : tests/test_minimax.c.o
+
+tests/test_minimax.i: tests/test_minimax.c.i
+.PHONY : tests/test_minimax.i
+
+# target to preprocess a source file
+tests/test_minimax.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/tests/test_minimax.c.i
+.PHONY : tests/test_minimax.c.i
+
+tests/test_minimax.s: tests/test_minimax.c.s
+.PHONY : tests/test_minimax.s
+
+# target to generate assembly for a file
+tests/test_minimax.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/tests/test_minimax.c.s
+.PHONY : tests/test_minimax.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -339,22 +450,34 @@ help:
 	@echo "... board"
 	@echo "... enigma"
 	@echo "... enigmaexo_main"
+	@echo "... enigmaexo_mainprune"
 	@echo "... exoc99_main"
 	@echo "... game"
+	@echo "... minimax"
 	@echo "... test_dummy"
 	@echo "... test_enigma"
+	@echo "... test_minimax"
 	@echo "... app/main.o"
 	@echo "... app/main.i"
 	@echo "... app/main.s"
+	@echo "... app/mainprune.o"
+	@echo "... app/mainprune.i"
+	@echo "... app/mainprune.s"
 	@echo "... src/enigma.o"
 	@echo "... src/enigma.i"
 	@echo "... src/enigma.s"
+	@echo "... src/minimax.o"
+	@echo "... src/minimax.i"
+	@echo "... src/minimax.s"
 	@echo "... tests/test_dummy.o"
 	@echo "... tests/test_dummy.i"
 	@echo "... tests/test_dummy.s"
 	@echo "... tests/test_enigma.o"
 	@echo "... tests/test_enigma.i"
 	@echo "... tests/test_enigma.s"
+	@echo "... tests/test_minimax.o"
+	@echo "... tests/test_minimax.i"
+	@echo "... tests/test_minimax.s"
 .PHONY : help
 
 

@@ -93,6 +93,7 @@ enigmaexo_main_EXTERNAL_OBJECTS =
 enigmaexo_main: CMakeFiles/enigmaexo_main.dir/app/main.c.o
 enigmaexo_main: CMakeFiles/enigmaexo_main.dir/build.make
 enigmaexo_main: libenigma.a
+enigmaexo_main: libminimax.a
 enigmaexo_main: libs/exoc99/libgame.a
 enigmaexo_main: libs/exoc99/libboard.a
 enigmaexo_main: libs/exoc99/libbitutils.a

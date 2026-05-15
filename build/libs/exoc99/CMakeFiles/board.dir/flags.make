@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include
 
-C_FLAGS = -g -O0 -std=gnu99
+C_FLAGS = -O3 -DNDEBUG -std=gnu99
 

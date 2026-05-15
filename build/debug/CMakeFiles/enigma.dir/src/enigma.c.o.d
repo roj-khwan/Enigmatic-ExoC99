@@ -60,4 +60,6 @@ CMakeFiles/enigma.dir/src/enigma.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include/bitutils.h
+ /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include/bitutils.h \
+ /home/london-femboy/Projects/CFool/Enigmatic-ExO/include/minimax.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h

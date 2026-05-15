@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = /home/london-femboy/Projects/CFool/Enigmatic-ExO/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/minimax.dir/all
 all: CMakeFiles/enigma.dir/all
 all: CMakeFiles/enigmaexo_main.dir/all
-all: CMakeFiles/tests_dummy.dir/all
-all: CMakeFiles/tests_enigma_logic.dir/all
+all: CMakeFiles/test_dummy.dir/all
+all: CMakeFiles/test_enigma.dir/all
+all: CMakeFiles/test_minimax.dir/all
 all: libs/exoc99/all
 .PHONY : all
 
@@ -75,10 +77,12 @@ preinstall: libs/exoc99/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/minimax.dir/clean
 clean: CMakeFiles/enigma.dir/clean
 clean: CMakeFiles/enigmaexo_main.dir/clean
-clean: CMakeFiles/tests_dummy.dir/clean
-clean: CMakeFiles/tests_enigma_logic.dir/clean
+clean: CMakeFiles/test_dummy.dir/clean
+clean: CMakeFiles/test_enigma.dir/clean
+clean: CMakeFiles/test_minimax.dir/clean
 clean: libs/exoc99/clean
 .PHONY : clean
 
@@ -104,12 +108,41 @@ libs/exoc99/clean: libs/exoc99/CMakeFiles/exoc99_main.dir/clean
 .PHONY : libs/exoc99/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/minimax.dir
+
+# All Build rule for target.
+CMakeFiles/minimax.dir/all: libs/exoc99/CMakeFiles/bitutils.dir/all
+CMakeFiles/minimax.dir/all: libs/exoc99/CMakeFiles/board.dir/all
+CMakeFiles/minimax.dir/all: libs/exoc99/CMakeFiles/game.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=13,14 "Built target minimax"
+.PHONY : CMakeFiles/minimax.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/minimax.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/minimax.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 0
+.PHONY : CMakeFiles/minimax.dir/rule
+
+# Convenience name for target.
+minimax: CMakeFiles/minimax.dir/rule
+.PHONY : minimax
+
+# clean rule for target.
+CMakeFiles/minimax.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/minimax.dir/build.make CMakeFiles/minimax.dir/clean
+.PHONY : CMakeFiles/minimax.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/enigma.dir
 
 # All Build rule for target.
 CMakeFiles/enigma.dir/all: libs/exoc99/CMakeFiles/bitutils.dir/all
 CMakeFiles/enigma.dir/all: libs/exoc99/CMakeFiles/board.dir/all
 CMakeFiles/enigma.dir/all: libs/exoc99/CMakeFiles/game.dir/all
+CMakeFiles/enigma.dir/all: CMakeFiles/minimax.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigma.dir/build.make CMakeFiles/enigma.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigma.dir/build.make CMakeFiles/enigma.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=5,6 "Built target enigma"
@@ -117,7 +150,7 @@ CMakeFiles/enigma.dir/all: libs/exoc99/CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/enigma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/enigma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 0
 .PHONY : CMakeFiles/enigma.dir/rule
@@ -135,10 +168,11 @@ CMakeFiles/enigma.dir/clean:
 # Target rules for target CMakeFiles/enigmaexo_main.dir
 
 # All Build rule for target.
-CMakeFiles/enigmaexo_main.dir/all: CMakeFiles/enigma.dir/all
 CMakeFiles/enigmaexo_main.dir/all: libs/exoc99/CMakeFiles/bitutils.dir/all
 CMakeFiles/enigmaexo_main.dir/all: libs/exoc99/CMakeFiles/board.dir/all
 CMakeFiles/enigmaexo_main.dir/all: libs/exoc99/CMakeFiles/game.dir/all
+CMakeFiles/enigmaexo_main.dir/all: CMakeFiles/minimax.dir/all
+CMakeFiles/enigmaexo_main.dir/all: CMakeFiles/enigma.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_main.dir/build.make CMakeFiles/enigmaexo_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/enigmaexo_main.dir/build.make CMakeFiles/enigmaexo_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=7,8 "Built target enigmaexo_main"
@@ -146,7 +180,7 @@ CMakeFiles/enigmaexo_main.dir/all: libs/exoc99/CMakeFiles/game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/enigmaexo_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/enigmaexo_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 0
 .PHONY : CMakeFiles/enigmaexo_main.dir/rule
@@ -161,59 +195,90 @@ CMakeFiles/enigmaexo_main.dir/clean:
 .PHONY : CMakeFiles/enigmaexo_main.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tests_dummy.dir
+# Target rules for target CMakeFiles/test_dummy.dir
 
 # All Build rule for target.
-CMakeFiles/tests_dummy.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=13,14 "Built target tests_dummy"
-.PHONY : CMakeFiles/tests_dummy.dir/all
+CMakeFiles/test_dummy.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=15,16 "Built target test_dummy"
+.PHONY : CMakeFiles/test_dummy.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tests_dummy.dir/rule: cmake_check_build_system
+CMakeFiles/test_dummy.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests_dummy.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_dummy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 0
-.PHONY : CMakeFiles/tests_dummy.dir/rule
+.PHONY : CMakeFiles/test_dummy.dir/rule
 
 # Convenience name for target.
-tests_dummy: CMakeFiles/tests_dummy.dir/rule
-.PHONY : tests_dummy
+test_dummy: CMakeFiles/test_dummy.dir/rule
+.PHONY : test_dummy
 
 # clean rule for target.
-CMakeFiles/tests_dummy.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_dummy.dir/build.make CMakeFiles/tests_dummy.dir/clean
-.PHONY : CMakeFiles/tests_dummy.dir/clean
+CMakeFiles/test_dummy.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_dummy.dir/build.make CMakeFiles/test_dummy.dir/clean
+.PHONY : CMakeFiles/test_dummy.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tests_enigma_logic.dir
+# Target rules for target CMakeFiles/test_enigma.dir
 
 # All Build rule for target.
-CMakeFiles/tests_enigma_logic.dir/all: CMakeFiles/enigma.dir/all
-CMakeFiles/tests_enigma_logic.dir/all: libs/exoc99/CMakeFiles/bitutils.dir/all
-CMakeFiles/tests_enigma_logic.dir/all: libs/exoc99/CMakeFiles/board.dir/all
-CMakeFiles/tests_enigma_logic.dir/all: libs/exoc99/CMakeFiles/game.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=15,16 "Built target tests_enigma_logic"
-.PHONY : CMakeFiles/tests_enigma_logic.dir/all
+CMakeFiles/test_enigma.dir/all: libs/exoc99/CMakeFiles/bitutils.dir/all
+CMakeFiles/test_enigma.dir/all: libs/exoc99/CMakeFiles/board.dir/all
+CMakeFiles/test_enigma.dir/all: libs/exoc99/CMakeFiles/game.dir/all
+CMakeFiles/test_enigma.dir/all: CMakeFiles/minimax.dir/all
+CMakeFiles/test_enigma.dir/all: CMakeFiles/enigma.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=17,18 "Built target test_enigma"
+.PHONY : CMakeFiles/test_enigma.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tests_enigma_logic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 10
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests_enigma_logic.dir/all
+CMakeFiles/test_enigma.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_enigma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 0
-.PHONY : CMakeFiles/tests_enigma_logic.dir/rule
+.PHONY : CMakeFiles/test_enigma.dir/rule
 
 # Convenience name for target.
-tests_enigma_logic: CMakeFiles/tests_enigma_logic.dir/rule
-.PHONY : tests_enigma_logic
+test_enigma: CMakeFiles/test_enigma.dir/rule
+.PHONY : test_enigma
 
 # clean rule for target.
-CMakeFiles/tests_enigma_logic.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests_enigma_logic.dir/build.make CMakeFiles/tests_enigma_logic.dir/clean
-.PHONY : CMakeFiles/tests_enigma_logic.dir/clean
+CMakeFiles/test_enigma.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_enigma.dir/build.make CMakeFiles/test_enigma.dir/clean
+.PHONY : CMakeFiles/test_enigma.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_minimax.dir
+
+# All Build rule for target.
+CMakeFiles/test_minimax.dir/all: libs/exoc99/CMakeFiles/bitutils.dir/all
+CMakeFiles/test_minimax.dir/all: libs/exoc99/CMakeFiles/board.dir/all
+CMakeFiles/test_minimax.dir/all: libs/exoc99/CMakeFiles/game.dir/all
+CMakeFiles/test_minimax.dir/all: CMakeFiles/minimax.dir/all
+CMakeFiles/test_minimax.dir/all: CMakeFiles/enigma.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles --progress-num=19,20 "Built target test_minimax"
+.PHONY : CMakeFiles/test_minimax.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_minimax.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 12
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_minimax.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_minimax.dir/rule
+
+# Convenience name for target.
+test_minimax: CMakeFiles/test_minimax.dir/rule
+.PHONY : test_minimax
+
+# clean rule for target.
+CMakeFiles/test_minimax.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_minimax.dir/build.make CMakeFiles/test_minimax.dir/clean
+.PHONY : CMakeFiles/test_minimax.dir/clean
 
 #=============================================================================
 # Target rules for target libs/exoc99/CMakeFiles/bitutils.dir

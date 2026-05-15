@@ -3,6 +3,7 @@
 
 CMakeFiles/enigma.dir/src/enigma.c.o: /home/london-femboy/Projects/CFool/Enigmatic-ExO/src/enigma.c \
   /home/london-femboy/Projects/CFool/Enigmatic-ExO/include/enigma.h \
+  /home/london-femboy/Projects/CFool/Enigmatic-ExO/include/minimax.h \
   /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include/bitutils.h \
   /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include/board.h \
   /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include/game.h \
@@ -67,6 +68,7 @@ CMakeFiles/enigma.dir/src/enigma.c.o: /home/london-femboy/Projects/CFool/Enigmat
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
@@ -74,6 +76,8 @@ CMakeFiles/enigma.dir/src/enigma.c.o: /home/london-femboy/Projects/CFool/Enigmat
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -84,6 +88,8 @@ CMakeFiles/enigma.dir/src/enigma.c.o: /home/london-femboy/Projects/CFool/Enigmat
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
@@ -97,15 +103,17 @@ CMakeFiles/enigma.dir/src/enigma.c.o: /home/london-femboy/Projects/CFool/Enigmat
 
 /usr/include/string.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/libs/exoc99/include/game.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -135,9 +143,7 @@ CMakeFiles/enigma.dir/src/enigma.c.o: /home/london-femboy/Projects/CFool/Enigmat
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/include/minimax.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 

@@ -95,6 +95,7 @@ test_enigma: CMakeFiles/test_enigma.dir/build.make
 test_enigma: libs/exoc99/libgame.a
 test_enigma: libs/exoc99/libboard.a
 test_enigma: libenigma.a
+test_enigma: libminimax.a
 test_enigma: libs/exoc99/libgame.a
 test_enigma: libs/exoc99/libboard.a
 test_enigma: libs/exoc99/libbitutils.a

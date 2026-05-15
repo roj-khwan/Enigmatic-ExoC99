@@ -1,0 +1,707 @@
+desc: (none)
+cmd: ./build/debug/enigmaexo_main
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=233749
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=peak
+n3: 5232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n1: 70 0x10977A: findavails (enigma.c:52)
+  n0: 70 in 2 places, all below massif's threshold (1.00%)
+ n0: 42 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=4232202
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=7380257
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5225 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n1: 66 0x10977A: findavails (enigma.c:52)
+  n0: 66 in 2 places, all below massif's threshold (1.00%)
+ n0: 39 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=12140900
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=16884579
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=21439918
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=26301118
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=30931698
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=35230804
+mem_heap_B=5216
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=37876307
+mem_heap_B=5205
+mem_heap_extra_B=251
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=42218482
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=46371301
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=49488142
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5204 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n1: 66 0x10977A: findavails (enigma.c:52)
+  n0: 66 in 2 places, all below massif's threshold (1.00%)
+ n0: 18 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=54154685
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=56750931
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=62461081
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=66099862
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=71117586
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=74101613
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=79080182
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=85054613
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=88042091
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=92025128
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=95008465
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=99981232
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=102968028
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5211 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n1: 70 0x10977A: findavails (enigma.c:52)
+  n0: 70 in 2 places, all below massif's threshold (1.00%)
+ n0: 21 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=107941280
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=113909653
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=120018383
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=123136912
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=126257252
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5211 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n1: 70 0x10977A: findavails (enigma.c:52)
+  n0: 70 in 2 places, all below massif's threshold (1.00%)
+ n0: 21 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=130937621
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=134055743
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=138737015
+mem_heap_B=5216
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=141856796
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n2: 72 0x10977A: findavails (enigma.c:52)
+  n1: 56 0x1098BE: minimax (minimax.c:22)
+   n0: 56 in 2 places, all below massif's threshold (1.00%)
+  n0: 16 in 1 place, below massif's threshold (1.00%)
+ n0: 24 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=144975640
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=148096556
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=152778190
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=155896958
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=160575113
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=165258740
+mem_heap_B=5216
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=168378640
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=171500765
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=174619007
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=177741896
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=180862853
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=185543539
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=190225148
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=194902076
+mem_heap_B=5216
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=197499341
+mem_heap_B=5192
+mem_heap_extra_B=200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=200098477
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=202696630
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=205293869
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=207892417
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=210490226
+mem_heap_B=5232
+mem_heap_extra_B=416
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5232 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n1: 70 0x10977A: findavails (enigma.c:52)
+  n0: 70 in 2 places, all below massif's threshold (1.00%)
+ n0: 42 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=213087452
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=215685657
+mem_heap_B=5204
+mem_heap_extra_B=316
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=218283210
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=220880947
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=223478004
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=226074546
+mem_heap_B=5211
+mem_heap_extra_B=373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=228670913
+mem_heap_B=5225
+mem_heap_extra_B=359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=231270133
+mem_heap_B=5216
+mem_heap_extra_B=304
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=233869679
+mem_heap_B=5216
+mem_heap_extra_B=432
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=236466638
+mem_heap_B=5180
+mem_heap_extra_B=340
+mem_stacks_B=0
+heap_tree=detailed
+n2: 5180 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48F71B4: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 5120 0x4907523: _IO_doallocbuf (genops.c:347)
+   n1: 4096 0x4904883: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:486)
+    n1: 4096 0x49075D1: _IO_default_uflow (genops.c:362)
+     n1: 4096 0x48F8F79: _IO_getline_info (iogetline.c:60)
+      n1: 4096 0x48F7BD3: fgets (iofgets.c:53)
+       n1: 4096 0x1094B3: getplayerinitiative (main.c:52)
+        n0: 4096 0x109566: main (main.c:67)
+   n1: 1024 0x4904F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4905AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4905AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48D2CC8: __printf_buffer_flush_to_file (printf_buffer_to_file.c:59)
+       n1: 1024 0x48D2CC8: __printf_buffer_to_file_done (printf_buffer_to_file.c:120)
+        n1: 1024 0x48DD742: __vfprintf_internal (vfprintf-internal.c:1545)
+         n1: 1024 0x48D21B2: printf (printf.c:33)
+          n1: 1024 0x10949B: getplayerinitiative (main.c:51)
+           n0: 1024 0x109566: main (main.c:67)
+ n0: 60 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=239062988
+mem_heap_B=5180
+mem_heap_extra_B=340
+mem_stacks_B=0
+heap_tree=empty

@@ -1,1 +1,0 @@
-/usr/bin/cc -g -O0 CMakeFiles/unit_tests_enigma.dir/tests/test_runner.c.o CMakeFiles/unit_tests_enigma.dir/tests/test_dummy.c.o CMakeFiles/unit_tests_enigma.dir/tests/test_enigma.c.o CMakeFiles/unit_tests_enigma.dir/tests/test_framework.c.o -o unit_tests_enigma  libenigma.a libs/exoc99/libgame.a libs/exoc99/libboard.a libs/exoc99/libbitutils.a 

@@ -1,6 +1,2 @@
-enigma_tests 8 0.000210403
-dummy-tests 5 0.000266877
-enigma-tests 6 0.000259373
-test_dummy 2 0.000687395
-test_enigma 1 0.00185386
+test_minimax 5 0.00744099
 ---

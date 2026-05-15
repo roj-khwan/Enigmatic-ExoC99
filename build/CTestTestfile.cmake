@@ -4,8 +4,10 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test([=[dummy-tests]=] "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/tests_dummy")
-set_tests_properties([=[dummy-tests]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;53;add_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;0;")
-add_test([=[enigma-tests]=] "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/tests_enigma_logic")
-set_tests_properties([=[enigma-tests]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;54;add_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;0;")
+add_test([=[test_dummy]=] "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/test_dummy")
+set_tests_properties([=[test_dummy]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;58;add_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;64;add_game_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;0;")
+add_test([=[test_enigma]=] "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/test_enigma")
+set_tests_properties([=[test_enigma]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;58;add_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;65;add_game_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;0;")
+add_test([=[test_minimax]=] "/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/test_minimax")
+set_tests_properties([=[test_minimax]=] PROPERTIES  _BACKTRACE_TRIPLES "/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;58;add_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;66;add_game_test;/home/london-femboy/Projects/CFool/Enigmatic-ExO/CMakeLists.txt;0;")
 subdirs("libs/exoc99")

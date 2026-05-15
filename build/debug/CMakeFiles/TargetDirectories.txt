@@ -1,7 +1,10 @@
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/minimax.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/enigma.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/enigmaexo_main.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/enigmaexo_mainprune.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test_dummy.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test_enigma.dir
+/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test_minimax.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/test.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/edit_cache.dir
 /home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles/rebuild_cache.dir

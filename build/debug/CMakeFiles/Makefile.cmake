@@ -42,10 +42,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/minimax.dir/DependInfo.cmake"
   "CMakeFiles/enigma.dir/DependInfo.cmake"
   "CMakeFiles/enigmaexo_main.dir/DependInfo.cmake"
+  "CMakeFiles/enigmaexo_mainprune.dir/DependInfo.cmake"
   "CMakeFiles/test_dummy.dir/DependInfo.cmake"
   "CMakeFiles/test_enigma.dir/DependInfo.cmake"
+  "CMakeFiles/test_minimax.dir/DependInfo.cmake"
   "libs/exoc99/CMakeFiles/bitutils.dir/DependInfo.cmake"
   "libs/exoc99/CMakeFiles/board.dir/DependInfo.cmake"
   "libs/exoc99/CMakeFiles/game.dir/DependInfo.cmake"

@@ -92,9 +92,6 @@ test_dummy_EXTERNAL_OBJECTS =
 
 test_dummy: CMakeFiles/test_dummy.dir/tests/test_dummy.c.o
 test_dummy: CMakeFiles/test_dummy.dir/build.make
-test_dummy: libs/exoc99/libgame.a
-test_dummy: libs/exoc99/libboard.a
-test_dummy: libs/exoc99/libbitutils.a
 test_dummy: CMakeFiles/test_dummy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/london-femboy/Projects/CFool/Enigmatic-ExO/build/debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_dummy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_dummy.dir/link.txt --verbose=$(VERBOSE)
