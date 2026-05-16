@@ -3,6 +3,9 @@ set(CMAKE_C_STANDARD 99)
 
 # Ensure debug symbols
 set(CMAKE_C_FLAGS_DEBUG "-g -O0 -Wall -Wextra")
+# Release flags
+set(CMAKE_C_FLAGS_RELEASE "-O2 -Wall -Wextra")
+
 project(Enigmatic-ExO C)
 
 if(NOT CMAKE_BUILD_TYPE)

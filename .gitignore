@@ -1,5 +1,6 @@
 build/
 out/
+".vscode"/
 cmake-build-*/
 CMakeCache.txt
 CMakeFiles/
@@ -8,5 +9,4 @@ compile_commands.json
 *.a
 *.so
 *.exe
-
-.vscode/
+in.txt

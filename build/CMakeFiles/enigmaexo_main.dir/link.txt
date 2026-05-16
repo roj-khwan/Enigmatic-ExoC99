@@ -1,1 +1,0 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/enigmaexo_main.dir/app/main.c.o -o enigmaexo_main  libenigma.a libminimax.a libs/exoc99/libgame.a libs/exoc99/libboard.a libs/exoc99/libbitutils.a 
