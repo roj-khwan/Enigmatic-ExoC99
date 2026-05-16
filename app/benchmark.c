@@ -1,7 +1,6 @@
 #include "stdio.h"
 #include "game.h"
 #include "enigma.h"
-
 int16_t requestmove() {
     int16_t pos, ret = -1;
     char* getret;
@@ -16,24 +15,23 @@ int16_t requestmove() {
     
   return pos;
 }
-
-int coreloop(board_t board, int pside){
+int coreloop(board_t board){
     static uint8_t side = 0;
     static uint16_t turn = 0;
     int16_t pos;
 
-    if (side == pside) {
-        pos = requestmove() - 1;
-    } else {
-        pos = searchwprune(board, side, turn); // TODO : fix this weird
-    }
+    pos = search(board, side, turn); 
+    // if (side % 2 == 0) {
+    //     pos = search(board, side, turn); // TODO : fix this weird
+    // } else {
+    //     pos = requestmove() - 1;
+    // }
     
     if (!play(board, side, pos)) {
 		printf("Can't place on position %d\n", pos + 1);
         return -1;
     }
 
-    printf("score evaluate %d\n", evaluate(board, side, turn));
     display(board);
 
     if (checkwin(board, side + 1)) return side + 1;
@@ -43,37 +41,14 @@ int coreloop(board_t board, int pside){
     return -1;
 }
 
-int getplayerinitiative() {
-    char buf[100];
-    char c;
-
-    for (;;) {
-        printf("Goes first? (Y/N): ");
-        if (!fgets(buf, sizeof(buf), stdin)) return -1; // EOF/error
-        if (sscanf(buf, " %c", &c) != 1) continue;
-
-        if (c == 'Y' || c == 'y') return 0;
-        if (c == 'N' || c == 'n') return 1;
-
-        printf("Error: Invalid input\n");
-    } 
-
-    return -1;
-}
-
 int main() {
-    int pside;
-
-    if ((pside = getplayerinitiative()) == -1) {
-        return 0;
-    }
 
     board_t board; // this is an array of board!
     int ret = -1;
     
     create(&board);
     display(board);
-    while ((ret = coreloop(board, pside)) == -1) {} 
+    while ((ret = coreloop(board)) == -1) {} 
 
     if (ret)
         printf("Player %d Win!!!\n", ret);

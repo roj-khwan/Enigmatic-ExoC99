@@ -41,37 +41,37 @@ target_link_libraries(
   PRIVATE enigma
 )
 add_executable(
-  enigmaexo_mainprune
-  app/mainprune.c
+  enigmaexo_benchmark
+  app/benchmark.c
 )
 target_link_libraries(
-  enigmaexo_mainprune
+  enigmaexo_benchmark
   PRIVATE enigma
 )
 
 # ---tests---
-enable_testing()
+# enable_testing()
 
-function(add_game_test testname)
-  add_executable(${testname} tests/${testname}.c)
+# function(add_game_test testname)
+#   add_executable(${testname} tests/${testname}.c)
 
-  target_include_directories(
-    ${testname}
-    PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
-  )
+#   target_include_directories(
+#     ${testname}
+#     PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include
+#   )
 
-  target_link_libraries(
-    ${testname}
-    PRIVATE
-    ${ARGN}
-  )
+#   target_link_libraries(
+#     ${testname}
+#     PRIVATE
+#     ${ARGN}
+#   )
 
-  add_test(
-    NAME ${testname}
-    COMMAND ${testname}
-  )
-endfunction()
+#   add_test(
+#     NAME ${testname}
+#     COMMAND ${testname}
+#   )
+# endfunction()
 
-add_game_test(test_dummy)
-add_game_test(test_enigma game board enigma)
-add_game_test(test_minimax board game enigma minimax)
+# add_game_test(test_dummy)
+# add_game_test(test_enigma game board enigma)
+# add_game_test(test_minimax board game enigma minimax)

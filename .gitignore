@@ -1,6 +1,6 @@
 build/
 out/
-".vscode"/
+/.vscode/
 cmake-build-*/
 CMakeCache.txt
 CMakeFiles/
@@ -9,4 +9,7 @@ compile_commands.json
 *.a
 *.so
 *.exe
-in.txt
+callgrind.out.*
+/Testing/
+/in.txt
+/out.txt

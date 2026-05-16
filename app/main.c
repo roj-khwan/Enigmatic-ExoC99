@@ -33,7 +33,6 @@ int coreloop(board_t board, int pside){
         return -1;
     }
 
-    printf("score evaluate %d\n", evaluate(board, side, turn));
     display(board);
 
     if (checkwin(board, side + 1)) return side + 1;

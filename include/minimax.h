@@ -3,32 +3,29 @@
 #include "board.h"
 #include <stdbool.h>
 
+typedef void* GameStatePointer;
 typedef struct MiniMaxInterface_t {
-    size_t (*availmoves) (board_t, int16_t**, uint8_t); // state, first move pointer, side -> length
-    int8_t (*play) (board_t, uint8_t, int16_t); // state, move, side -> status
-    int16_t (*eval) (board_t, uint8_t, uint16_t); // state, side, depth -> score
+    size_t (*availmoves) (GameStatePointer, int16_t**); // state, first move pointer -> length
+    int16_t (*eval) (GameStatePointer, GameStatePointer, uint16_t); // state, firststate, depth -> score
+    int8_t (*play) (GameStatePointer, int16_t); // state, move -> status
+    void* (*copy) (GameStatePointer);
+    void (*destroy) (GameStatePointer);
 } MiniMaxInterface;
 typedef struct MiniMaxState_t {
-    board_t board;
     uint16_t depth;
-    uint8_t side;
+    int16_t alpha;
+    int16_t beta;
     char ismax;
 } MiniMaxState;
 typedef struct MiniMaxAbsolute_t {
-    uint8_t side;
     uint16_t maxdepth;
+    GameStatePointer firststate;
 } MiniMaxAbsolute;
-typedef struct MiniMaxPrune_t {
-    int16_t alpha;
-    int16_t beta;
-} MiniMaxPrune;
 
 // find terminal state; depth, maxdepth
 // state; board
 // how to continues; availmoves
 // continues state; play
 // evaluate state; eval
-int16_t minimax(MiniMaxAbsolute* absolute, MiniMaxState state, MiniMaxInterface* interface);
-int16_t bestmove(MiniMaxAbsolute* absolute, MiniMaxState state, MiniMaxInterface* interface);
-int16_t minimaxpruning(MiniMaxAbsolute* absolute, MiniMaxPrune prune, MiniMaxState state, MiniMaxInterface* interface);
-int16_t bestmovepruning(MiniMaxAbsolute* absolute, MiniMaxState state, MiniMaxInterface* interface);
+int16_t minimax(MiniMaxAbsolute* absolute, GameStatePointer state, MiniMaxState minimaxstate, MiniMaxInterface* interface);
+int16_t bestmove(MiniMaxAbsolute* absolute, GameStatePointer state, uint16_t depth, MiniMaxInterface* interface);

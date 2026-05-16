@@ -36,14 +36,21 @@ int test_evaluation() {
     board_t board;
     create(&board);
 
-    ASSERT_EQUAL(evaluate(board, 0, 3), 0, "Evaluation return 0 on no winning");
+    GameState* state = {
+        board,
+        0
+    };
+    GameState* 
+
+    ASSERT_EQUAL(evaluate(state, 3), 0, "Evaluation return 0 on no winning");
 
     place(board, 0, 0);
     place(board, 0, 1);
     place(board, 0, 2);
 
-    ASSERT_EQUAL(evaluate(board, 0, 4), 5, "Evaluation return 5 point on fastest route of winning");
-    ASSERT_EQUAL(evaluate(board, 0, 6), 3, "Evaluation return 3 point when take 3 turn to win");
+    state.side = 3;
+    ASSERT_EQUAL(evaluate(state, 4), 5, "Evaluation return 5 point on fastest route of winning");
+    ASSERT_EQUAL(evaluate({board, 0}, 6), 3, "Evaluation return 3 point when take 3 turn to win");
     ASSERT_EQUAL(evaluate(board, 1, 4), -5, "Evaluation return -5 point on fastest route of losing");
 
     place(board, 1, 2);
